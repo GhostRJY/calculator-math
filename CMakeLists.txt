@@ -28,9 +28,9 @@ file(
 )
 
 add_custom_target(
-    format
+    calculator_math_format
     COMMAND ${CLANG_FORMAT_PATH} -i ${FORMAT_FILES}
-    COMMENT "Running clang-format"
+    COMMENT "Running clang-format for calculator_math"
 )
 
 install(
