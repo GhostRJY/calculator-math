@@ -59,7 +59,7 @@ inline bool multiply(int left, int right, int* result)
     return true;
 }
 
-inline bool divide(int left, int right, double* result)
+inline bool divide(int left, int right, int* result)
 {
     if (result == nullptr)
     {
