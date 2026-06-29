@@ -71,7 +71,12 @@ inline bool divide(int left, int right, double* result)
         return false;
     }
 
-    *result = static_cast<double>(left) / static_cast<double>(right);
+    if (left == INT_MIN && right == -1)
+    {
+        return false;
+    }
+
+    *result = left / right;
     return true;
 }
 
